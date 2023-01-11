@@ -5,7 +5,7 @@ import { StyleSheet, Text, View,Linking, TextInput, TouchableOpacity, Button,Sha
 
 
 export default function App() {
-  const[num,setNum]=useState("");
+  const[num,setNum]=useState("9786241276");
   const[whmsg,setWhmsg]=useState(
     "Please Click On a Link : https://en.wikipedia.org/wiki/Shivaji"
   )
@@ -41,13 +41,7 @@ export default function App() {
   return (
     <View style={styles.container}>
      <Text style={{fontWeight:"600",fontSize:18,marginBottom:"5%"}}> To send Massege to Mobile Number</Text>
-     <TextInput
-     value={num}
-     onChangeText={(nm)=>setNum(nm)}
-     placeholder={"Enter Mobile Number"}
-     keyboardType={"numeric"}
-     style={styles.input}/>
-      <StatusBar style="auto" />
+     
       <TouchableOpacity onPress={pressHandel} style={styles.touch}>
         <Text style={{color:"white"}}>Send Massege</Text>
       </TouchableOpacity>
