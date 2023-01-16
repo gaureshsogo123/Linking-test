@@ -24,10 +24,14 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.pattabi.linking"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      
     }
   }
 }
